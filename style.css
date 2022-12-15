@@ -1,0 +1,45 @@
+
+header{
+    position: relative;
+}
+
+.bg-header{
+    background-color: green;
+    height: 10vh;
+
+}
+.bg-main{
+    background-color: grey;
+    height: 90vh;
+    
+}
+
+main>.container{
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+}
+.list{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(163, 108, 35);
+    position: absolute;
+    border-left: 1px solid lightgray;
+    top: 0;
+    right: 0;
+}
+
+.chat{
+    width: 70%;
+    height: 100%;
+    background-color: beige;
+    position: absolute;
+    top: 0;
+    left: 0;   
+}
+
+
