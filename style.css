@@ -4,18 +4,16 @@ header{
 }
 
 .bg-header{
-    background-color: green;
-    height: 10vh;
-
-}
-.bg-main{
-    background-color: grey;
-    height: 90vh;
+    background-color:#009688 ;
+    height: 20vh;
     
 }
-
+.bg-main{
+    background-color: #d9dbd3;
+    height: 80vh;
+    
+}
 main>.container{
-    height: 90vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,23 +21,42 @@ main>.container{
     background-color: white;
     color: black;
 }
-.list{
-    width: 30%;
-    height: 100%;
-    background-color: rgb(163, 108, 35);
-    position: absolute;
-    border-left: 1px solid lightgray;
-    top: 0;
-    right: 0;
+
+i{
+    font-size: 1rem;
 }
 
-.chat{
-    width: 70%;
-    height: 100%;
-    background-color: beige;
-    position: absolute;
-    top: 0;
-    left: 0;   
+.list{
+    height: 95vh;
 }
+
+.search{
+    width: 100%;
+    margin: 0 .5rem;
+}
+
+
+img.my-avatar,
+img.avatar{
+    height: 2rem;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.contatto{
+    height: 95vh;
+}
+
+.notifiche{
+    margin: 0 .5rem;
+    background-color: #8edafc;
+}
+
+.conversation{
+    height: 85%;
+    background-image: url(./img/mine.jpg);
+    background-size: contain;
+}
+
 
 
