@@ -46,7 +46,7 @@
 
                         <div v-for="element in contacts" class="d-flex col-11 bg-light">
                             <div>
-                                <img src="./img/avatar_1.jpg" class="avatar img-fluid" alt="">
+                                <img :src="`./img/avatar${element.avatar}.jpg`" class="avatar img-fluid" alt="">
                             </div>
                             <div>
                                 <p>{{element.name}}</p>
@@ -70,7 +70,12 @@
                             </div>
                             
                             <div class="conversation col-12">
-
+                                <div class="right">
+                                    prova
+                                </div>
+                                <div class="left">
+                                    prova
+                                </div>
                             </div>
 
                             <div class="col-12 bg-light d-flex justify-content-between mt-2">
@@ -85,7 +90,6 @@
                         </div>
                     </div>
             </main>
-        </div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
