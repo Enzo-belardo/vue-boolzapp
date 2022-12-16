@@ -70,8 +70,8 @@
                             </div>
                             
                             <div class="conversation col-12">
-                                <div class="right">
-                                    prova
+                                <div class="right" v-for="element in contacts[indexContact].messages">
+                                    {{element.message}}        
                                 </div>
                                 <div class="left">
                                     prova
