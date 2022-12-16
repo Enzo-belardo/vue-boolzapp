@@ -171,6 +171,11 @@ createApp({
         }
     },
 
-    methods:{}
+    methods:{
+        showChat(content){
+
+
+        }
+    }
    
 }).mount('#app');
