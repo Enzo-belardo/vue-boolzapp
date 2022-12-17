@@ -44,7 +44,7 @@
                                 placeholder="Cerca o inizia una nuova chat">
                         </div>
 
-                        <div v-for="element in contacts" @click="showChat" class="d-flex col-11 bg-light">
+                        <div v-for="(element,index) in contacts" @click="showChat(index)" class="d-flex col-11 bg-light"> 
                             <div>
                                 <img :src="`./img/avatar${element.avatar}.jpg`" class="avatar img-fluid" alt="">
                             </div>

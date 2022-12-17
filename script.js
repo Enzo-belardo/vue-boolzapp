@@ -172,11 +172,8 @@ createApp({
     },
 
     methods:{
-        showChat(){
-            this.indexContact++
-            if(this.indexContact >=5){
-                this.indexContact = 0
-            }
+        showChat(index){
+            this.indexContact = index;
         }
     }
    
