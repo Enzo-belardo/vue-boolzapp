@@ -79,7 +79,7 @@
                                 <div class="ms-2 text-center align-self-center">
                                     <i class="fa-regular fa-face-smile"></i>
                                 </div>
-                                <input type="text" name="" class="col-10" placeholder="scrivi un messaggio">
+                                <input type="text" name=""  v-model="myMessage" @keyup.enter="newMessage(myMessage)"class="col-10" placeholder="scrivi un messaggio">
                                 <div class="me-2 align-self-center text-center">
                                     <i class="fa-solid fa-microphone"></i>
                                 </div>

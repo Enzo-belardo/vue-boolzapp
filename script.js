@@ -4,6 +4,7 @@ createApp({
     data(){
         return{
             indexContact: 0,
+            myMessage: "",
 
             contacts: [
                 {
@@ -173,7 +174,13 @@ createApp({
 
     methods:{
         showChat(index){
-            this.indexContact = index;
+            this.indexContact = index
+        },
+
+        newMessage(content){   
+          if(!this.messages.includes(content)){
+            this.contacts.messages.push({message : content, status : sent});
+          }; 
         }
     }
    
