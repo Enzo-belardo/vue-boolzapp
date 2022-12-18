@@ -178,9 +178,10 @@ createApp({
         },
 
         newMessage(content){   
-          if(!this.messages.includes(content)){
-            this.contacts.messages.push({message : content, status : sent});
-          }; 
+          if(!this.contacts.includes(content)){
+            this.myMessage = ''
+            this.contacts[this.indexContact].messages.push({message : content, status : 'sent'});
+          }
         }
     }
    
