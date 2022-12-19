@@ -70,7 +70,7 @@
                             </div>
                             
                             <div class="conversation col-12">
-                                <div :class="(message.status == 'sent') ? 'sent' : 'received'" v-for="message in contacts [indexContact].messages">
+                                <div :class="(message.status == 'sent') ? 'sent' : 'received'" v-for="(message) in contacts [indexContact].messages">
                                     <p>{{message.message}}</p>       
                                 </div>
                             </div>

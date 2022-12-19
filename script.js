@@ -179,10 +179,15 @@ createApp({
 
         newMessage(content){   
           if(!this.contacts.includes(content)){
-            this.myMessage = ''
-            this.contacts[this.indexContact].messages.push({message : content, status : 'sent'});
-          }
-        }
+              this.myMessage = ''
+              this.contacts[this.indexContact].messages.push({message : content, status : 'sent'});
+            }
+            
+            setTimeout(() => {
+                this.contacts[this.indexContact].messages.push({message : 'ok', status : 'receveid'});          
+            }, 1500);
+        },  
+        
     }
    
 }).mount('#app');
