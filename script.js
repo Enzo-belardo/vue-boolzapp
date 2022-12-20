@@ -5,6 +5,7 @@ createApp({
         return{
             indexContact: 0,
             myMessage: "",
+            searchContact:"",
 
             contacts: [
                 {
@@ -173,21 +174,30 @@ createApp({
     },
 
     methods:{
+        //milestone 2: in questa funzione quando clicchiamo su uno dei contatti presenti in lista ci mostra la chat
         showChat(index){
             this.indexContact = index
         },
 
+        //milestone 3: in questa funzione aggiungiamo un messaggio in chat e dopo 1 secondo riceviamo la risposta 'ok' 
         newMessage(content){   
-          if(!this.contacts.includes(content)){
+            if(!this.contacts.includes(content)){
               this.myMessage = ''
               this.contacts[this.indexContact].messages.push({message : content, status : 'sent'});
             }
             
             setTimeout(() => {
                 this.contacts[this.indexContact].messages.push({message : 'ok', status : 'receveid'});          
-            }, 1500);
-        },  
-        
+            }, 1000);
+        }, 
+        //milestone 4 : in questa funzione ricerchiamo un contatto nella lista di contatti
+        search(){ 
+            this.contacts = this.contacts.filter(element => {
+                return element.name.toLowerCase().includes(this.searchContact)
+            })
+        }
+
+      
     }
    
 }).mount('#app');
